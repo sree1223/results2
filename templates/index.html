@@ -1,0 +1,24 @@
+<html>
+<head>
+</head>
+<body>
+<form id="frm">
+<input id='inp' focus><br><br>
+<button id='but' type="submit"> Get results </button>
+</form>
+<script>
+
+var inp = document.getElementById('inp');
+var but = document.getElementById('but');
+var frm = document.getElementById('frm');
+
+window.onload = inp.focus();
+
+setInterval(ret,50);
+
+function ret(){
+    frm.action =  '/class/' + inp.value;
+}
+</script>
+</body>
+</html>
